@@ -9,18 +9,7 @@ mode, CSV export, transaction search, and a financial health score.
 
 ## How to run it
 
-No build step, no npm install, no API keys required.
-
-1. Unzip the project.
-2. Open `index.html` directly in a browser — **or**, for the smoothest
-   experience (some browsers restrict `fetch`/module behaviour on the
-   `file://` protocol), serve it locally:
-   ```bash
-   cd smartspend
-   python3 -m http.server 8000
-   # then visit http://localhost:8000
-   ```
-3. Log in with the pre-loaded demo account to see sample data:
+ Log in with the pre-loaded demo account to see sample data:
    - **Email:** `demo@smartspend.app`
    - **Password:** `demo1234`
 
@@ -86,19 +75,5 @@ smartspend/
 - [x] CSV export of (filtered) transactions
 - [x] Financial health score (0–100), explicitly labeled as a custom rule-based score
 
-## Notes for your internship report
-
-- **Introduction / Abstract:** frame it as *"a personal finance dashboard
-  that lets a user log income and expenses, visualize spending patterns,
-  set savings goals and budget limits, and get automated insights into
-  their habits."*
-- **Tools used:** HTML5, CSS3, JavaScript (ES6+), Chart.js, browser
-  `localStorage` (standing in for Firebase Auth + Firestore).
-- **Steps involved:** data modeling (transactions/goals/budgets) →
-  authentication → CRUD screens → chart integration → filters/search →
-  goals & budget alerts → rule-based insights & health score → dark mode
-  & responsive polish → CSV export.
-- **Conclusion:** summarize what you'd add with more time (e.g. real
-  Firebase backend, recurring transactions, multi-currency support).
 
 Good luck with the presentation!
